@@ -1,5 +1,5 @@
 {% set name = "geohexgrid" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5fda7b4934aa1c125d2407b565070803460eb9b8c63b066cbe354d5363fcfbff
+  sha256: 45902dc3c18720724f57dfa83371f549ad84768dafed2f9c3ce5b562c639f127
 
 build:
   noarch: python
@@ -23,7 +23,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - geopandas >=0.11.1
-    - rtree >=1.0.0
 
 test:
   imports:
